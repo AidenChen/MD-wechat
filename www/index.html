@@ -17,22 +17,27 @@
 
         <!-- your app's js -->
         <script src="js/app.js"></script>
+        <!--<script src="js/controllers.js"></script>-->
+        <!--<script src="js/routes.js"></script>-->
+        <script src="js/services.js"></script>
+        <!--<script src="js/directives.js"></script>-->
+        <!--<script src="js/elastic.js"></script>-->
     </head>
     <body ng-app="starter">
 
         <ion-side-menus>
             <ion-pane ion-side-menu-content>
-                <ion-header-bar align-title="left" class="bar-positive">
-                    <!--<ion-nav-back-button>-->
-                    <!--</ion-nav-back-button>-->
-                    <div class="buttons">
+                <ion-nav-bar align-title="left" class="bar-positive">
+                    <ion-nav-back-button>
+                    </ion-nav-back-button>
+                    <ion-nav-buttons side="left">
                         <button class="button button-icon icon ion-navicon" menu-toggle="left"></button>
-                    </div>
-                    <h1 class="title">WeChat</h1>
-                    <div class="buttons">
+                    </ion-nav-buttons>
+                    <ion-nav-buttons side="right">
                         <button class="button button-icon icon ion-android-search"></button>
-                    </div>
-                </ion-header-bar>
+                        <button class="button button-icon icon ion-android-add"></button>
+                    </ion-nav-buttons>
+                </ion-nav-bar>
                 <ion-nav-view name="tab" animation="slide-left-right"></ion-nav-view>
             </ion-pane>
 
