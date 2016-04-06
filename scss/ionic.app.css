@@ -15,6 +15,33 @@ $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
+.item > .rj-sm-red-icon {
+  position: absolute;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #FF0000;
+  line-height: 18px;
+  text-align: center;
+  top: 5px;
+  left: 40px; }
+
+.item > .rj-sm-red-icon > p {
+  color: #FFF;
+  font-size: 12px; }
+
+.item .rj-list-p {
+  font-size: 13px;
+  color: #6a6a6a; }
+
+.rj-push-right {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #8c8c8c;
+  font-size: 13px; }
+
 /*!
   Ionicons, v2.0.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
@@ -28,8 +55,8 @@ $dark:                            #444 !default;
 */
 @font-face {
   font-family: "Ionicons";
-  src: url("../www/lib/ionic/fonts/ionicons.eot?v=2.0.1");
-  src: url("../www/lib/ionic/fonts/ionicons.eot?v=2.0.1#iefix") format("embedded-opentype"), url("../www/lib/ionic/fonts/ionicons.ttf?v=2.0.1") format("truetype"), url("../www/lib/ionic/fonts/ionicons.woff?v=2.0.1") format("woff"), url("../www/lib/ionic/fonts/ionicons.woff") format("woff"), url("../www/lib/ionic/fonts/ionicons.svg?v=2.0.1#Ionicons") format("svg");
+  src: url("../lib/ionic/fonts/ionicons.eot?v=2.0.1");
+  src: url("../lib/ionic/fonts/ionicons.eot?v=2.0.1#iefix") format("embedded-opentype"), url("../lib/ionic/fonts/ionicons.ttf?v=2.0.1") format("truetype"), url("../lib/ionic/fonts/ionicons.woff?v=2.0.1") format("woff"), url("../lib/ionic/fonts/ionicons.woff") format("woff"), url("../lib/ionic/fonts/ionicons.svg?v=2.0.1#Ionicons") format("svg");
   font-weight: normal;
   font-style: normal; }
 .ion, .ionicons,
@@ -6180,7 +6207,7 @@ button.item.item-button-right {
     max-height: 40px;
     width: 100%;
     height: 100%;
-    border-radius: 50%; }
+    border-radius: 0; }
 
 .item-avatar-right,
 .item-avatar-right .item-content {
@@ -6197,7 +6224,7 @@ button.item.item-button-right {
     max-height: 40px;
     width: 100%;
     height: 100%;
-    border-radius: 50%; }
+    border-radius: 0; }
 
 .item-thumbnail-left,
 .item-thumbnail-left .item-content {

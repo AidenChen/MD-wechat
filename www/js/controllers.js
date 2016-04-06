@@ -1,11 +1,8 @@
-angular.module('wechat.controllers', [])
+angular.module('starter.controllers', [])
 
-.controller('findCtrl', function($scope, $state) {
-    $scope.onSwipeLeft = function() {
-        $state.go("tab.setting");
-    };
+.controller('foundCtrl', function($scope, $state) {
     $scope.onSwipeRight = function() {
-        $state.go("tab.friends");
+        $state.go("tabs.contact");
     };
 })
 
@@ -14,7 +11,7 @@ angular.module('wechat.controllers', [])
     // $scope.messages = messageService.getAllMessages();
     // console.log($scope.messages);
     $scope.onSwipeLeft = function() {
-        $state.go("tab.friends");
+        $state.go("tabs.contact");
     };
     $scope.popupMessageOpthins = function(message) {
         $scope.popup.index = $scope.messages.indexOf(message);
@@ -60,7 +57,7 @@ angular.module('wechat.controllers', [])
         messageService.updateMessage(message);
     };
     $scope.messageDetils = function(message) {
-        $state.go("messageDetail", {
+        $state.go("conversation", {
             "messageId": message.id
         });
     };
@@ -75,25 +72,19 @@ angular.module('wechat.controllers', [])
 
 })
 
-.controller('friendsCtrl', function($scope, $state) {
+.controller('contactCtrl', function($scope, $state) {
     $scope.onSwipeLeft = function() {
-        $state.go("tab.find");
+        $state.go("tabs.found");
     };
     $scope.onSwipeRight = function() {
-        $state.go("tab.message");
+        $state.go("tabs.home");
     };
     $scope.contacts_right_bar_swipe = function(e){
         console.log(e);
     };
 })
 
-.controller('settingCtrl', function($scope, $state) {
-    $scope.onSwipeRight = function() {
-        $state.go("tab.find");
-    };
-})
-
-.controller('messageDetailCtrl', ['$scope', '$stateParams',
+.controller('conversationDetailCtrl', ['$scope', '$stateParams',
     'messageService', '$ionicScrollDelegate', '$timeout',
     function($scope, $stateParams, messageService, $ionicScrollDelegate, $timeout) {
         var viewScroll = $ionicScrollDelegate.$getByHandle('messageDetailsScroll');

@@ -1,4 +1,4 @@
-angular.module('wechat.directives', [])
+angular.module('starter.directives', [])
     .directive('rjHoldActive', ['$ionicGesture', '$timeout', '$ionicBackdrop',
         function($ionicGesture, $timeout, $ionicBackdrop) {
             return {

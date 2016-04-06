@@ -3,7 +3,17 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic','starter.services'])
+angular.module('starter', ['ionic', 'starter.routes', 'starter.directives', 'starter.controllers', 'starter.services', 'monospaced.elastic'])
+
+.config(function($ionicConfigProvider) {
+
+    $ionicConfigProvider.tabs.position('top'); // other values: top
+    $ionicConfigProvider.backButton.previousTitleText(false);
+    $ionicConfigProvider.backButton.text('');
+    $ionicConfigProvider.backButton.icon('ion-ios-arrow-back');
+    $ionicConfigProvider.tabs.style("standard");
+
+})
 
 .run(function($ionicPlatform, $http, messageService, dateService) {
     var url = "";
@@ -38,96 +48,4 @@ angular.module('starter', ['ionic','starter.services'])
             StatusBar.styleDefault();
         }
     });
-})
-
-.config(function ($stateProvider, $urlRouterProvider) {
-    $stateProvider
-        .state('tabs', {
-            url: "/tab",
-            abstract: true,
-            views: {
-                'tab': {
-                    templateUrl: "templates/tabs.html"
-                }
-            }
-        })
-        .state('tabs.home', {
-            url: "/home",
-            views: {
-                'home-tab': {
-                    templateUrl: "templates/home.html",
-                    controller: "messageCtrl"
-                }
-            }
-        })
-        .state('tabs.conversation', {
-            url: "/conversation",
-            views: {
-                'home-tab': {
-                    templateUrl: "templates/conversation.html"
-                }
-            }
-        })
-        .state('tabs.contact', {
-            url: "/contact",
-            views: {
-                'contact-tab': {
-                    templateUrl: "templates/contact.html"
-                }
-            }
-        })
-        .state('tabs.found', {
-            url: "/found",
-            views: {
-                'found-tab': {
-                    templateUrl: "templates/found.html"
-                }
-            }
-        })
-    $urlRouterProvider.otherwise("/tab/home");
-})
-
-.config(function($ionicConfigProvider) {
-
-    $ionicConfigProvider.tabs.position('top'); // other values: top
-    $ionicConfigProvider.backButton.previousTitleText(false);
-    $ionicConfigProvider.backButton.text('');
-    $ionicConfigProvider.backButton.icon('ion-ios-arrow-back');
-    $ionicConfigProvider.tabs.style("standard");
-
-})
-
-.controller('messageCtrl', function($scope, $state, $ionicPopup, localStorageService, messageService) {
-    $scope.popup = {
-        isPopup: false,
-        index: 0
-    };
-    $scope.onSwipeLeft = function () {
-        $state.go("tabs.contact");
-    };
-    $scope.popupMessageOpthins = function ($index) {
-        $scope.popup.index = $index;
-        //这里通过$ionicPopup.show()方法创建了一个自定义的popup
-        $scope.popup.optionsPopup = $ionicPopup.show({
-            templateUrl: "templates/popup.html",
-            scope: $scope,
-        });
-        $scope.popup.isPopup = true;
-    };
-    //实现标为已读/未读, 注意$scope.popup.optionsPopup.close()方法
-    //用来关闭弹窗, 我竟然找了很久才发现这个接口
-    $scope.markMessage = function () {
-        var index = $scope.popup.index;
-        var message = $scope.messages[index];
-        if (message.showHints) {
-            message.showHints = false;
-            message.noReadMessages = 0;
-        } else {
-            message.showHints = true;
-            message.noReadMessages = 1;
-        }
-        $scope.popup.optionsPopup.close();
-        $scope.popup.isPopup = false;
-        messageService.updateMessage(message);
-    };
 })

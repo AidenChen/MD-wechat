@@ -1,54 +1,43 @@
-angular.module('wechat.routes', [])
+angular.module('starter.routes', [])
 
-.config(function($stateProvider, $urlRouterProvider) {
-
+.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
-        .state("tab", {
+        .state('tabs', {
             url: "/tab",
             abstract: true,
-            templateUrl: "templates/tabs.html",
+            templateUrl: "templates/tabs.html"
         })
-        .state('tab.message', {
-            url: '/message',
+        .state('tabs.home', {
+            url: "/home",
             views: {
-                'tab-message': {
-                    templateUrl: 'templates/tab-message.html',
+                'home-tab': {
+                    templateUrl: "templates/home.html",
                     controller: "messageCtrl"
                 }
             }
         })
-        .state('messageDetail', {
-            url: '/messageDetail/:messageId',
-            templateUrl: "templates/message-detail.html",
-            controller: "messageDetailCtrl"
+        .state('conversation', {
+            url: "/conversation/:messageId",
+            templateUrl: "templates/conversation.html",
+            controller: "conversationDetailCtrl"
         })
-        .state('tab.friends', {
-            url: '/friends',
+        .state('tabs.contact', {
+            url: "/contact",
             views: {
-                'tab-friends': {
-                    templateUrl: 'templates/tab-friends.html',
-                    controller: "friendsCtrl"
+                'contact-tab': {
+                    templateUrl: "templates/contact.html",
+                    controller: "contactCtrl"
                 }
             }
         })
-        .state('tab.find', {
-            url: '/find',
+        .state('tabs.found', {
+            url: "/found",
             views: {
-                'tab-find': {
-                    templateUrl: 'templates/tab-find.html',
-                    controller: "findCtrl"
-                }
-            },
-        })
-        .state('tab.setting', {
-            url: '/setting',
-            views: {
-                'tab-setting': {
-                    templateUrl: 'templates/tab-setting.html',
-                    controller: "settingCtrl"
+                'found-tab': {
+                    templateUrl: "templates/found.html",
+                    controller: "foundCtrl"
                 }
             }
-        });
-
-    $urlRouterProvider.otherwise("/tab/message");
+        })
+    $urlRouterProvider.otherwise("/tab/home");
 });

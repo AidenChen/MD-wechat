@@ -15,9 +15,41 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
+$item-avatar-border-radius: 0;
+
+.item > .rj-sm-red-icon {
+  position: absolute;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #FF0000;
+  line-height: 18px;
+  text-align: center;
+  top: 5px;
+  left: 40px;
+}
+
+.item > .rj-sm-red-icon > p {
+  color: #FFF;
+  font-size: 12px;
+}
+
+.item .rj-list-p {
+  font-size: 13px;
+  color: #6a6a6a;
+}
+
+.rj-push-right {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #8c8c8c;
+  font-size: 13px;
+}
+
 // The path for our ionicons font files, relative to the built CSS in www/css
-$ionicons-font-path: "../www/lib/ionic/fonts" !default;
+$ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "../www/lib/ionic/scss/ionic";
-

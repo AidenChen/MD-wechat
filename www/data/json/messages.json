@@ -1,7 +1,7 @@
 {
     "messages": [{
         "id": 8,
-        "name": "李明",
+        "name": "Adam",
         "pic": "img/adam.jpg",
         "lastMessage": {
             "originalTime": "2015-11-27 06:34:55",
@@ -84,7 +84,7 @@
         }]
     }, {
         "id": 1,
-        "name": "王峰",
+        "name": "Ben",
         "pic": "img/ben.png",
         "lastMessage": {
             "originalTime": "2015-11-26 5:22:55",
@@ -111,7 +111,7 @@
         }]
     }, {
         "id": 7,
-        "name": "潘敏",
+        "name": "Max",
         "pic": "img/max.png",
         "lastMessage": {
             "originalTime": "2015-11-22 15:34:55",
@@ -138,7 +138,7 @@
         }]
     }, {
         "id": 2,
-        "name": "王振启",
+        "name": "Mike",
         "pic": "img/mike.png",
         "lastMessage": {
             "originalTime": "2015-11-21 15:34:55",
@@ -152,7 +152,7 @@
         "isTop": 0
     }, {
         "id": 6,
-        "name": "许仁杰",
+        "name": "Perry",
         "pic": "img/perry.png",
         "lastMessage": {
             "originalTime": "2014-10-12 15:34:55",
