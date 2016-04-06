@@ -1,6 +1,6 @@
-<ion-header-bar align-title="left" class="bar-dark">
+<ion-header-bar align-title="left" class="bar-positive">
     <div class="buttons">
-        <button class="button button-icon icon ion-arrow-left-c" ui-sref="tab.message">
+        <button class="button button-icon icon ion-ios-arrow-back" ui-sref="tabs.home">
         </button>
     </div>
     <!-- <div class="h1 title" ng-bind="message.name">微信</div> -->
@@ -9,7 +9,7 @@
         <button class="button button-icon icon ion-person"></button>
     </div>
 </ion-header-bar>
-<ion-content class="rj-stable-content" delegate-handle="messageDetailsScroll" id="message-detail-content">
+<ion-content on-swipe-right="onSwipeRight()" class="rj-stable-content" delegate-handle="messageDetailsScroll" id="message-detail-content">
     <ion-refresher pulling-text="..." on-refresh="doRefresh()" pulling-icon=""></ion-refresher>
     <div ng-repeat="item in messageDetils">
         <p class="rj-message-time" ng-bind="item.time" ng-if="false"></p>

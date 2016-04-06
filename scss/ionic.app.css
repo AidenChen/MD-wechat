@@ -42,6 +42,230 @@ $dark:                            #444 !default;
   color: #8c8c8c;
   font-size: 13px; }
 
+.item.my-popup {
+  padding: 15px;
+  padding-left: 20px; }
+
+.popup-head {
+  padding: 0 !important;
+  border-bottom: none !important; }
+
+.popup-body {
+  padding: 0px !important;
+  overflow: hidden !important; }
+
+.scroll-bar-indicator {
+  display: none; }
+
+.item > .rj-sm-red-icon {
+  position: absolute;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #FF0000;
+  line-height: 18px;
+  text-align: center;
+  top: 5px;
+  left: 40px; }
+
+.item > .rj-sm-red-icon > p {
+  color: #FFF;
+  font-size: 12px; }
+
+.rj-item-top {
+  background-color: #F1F1F1 !important; }
+
+.rj-stable-content {
+  background-color: #EEE; }
+
+.bar-footer {
+  border-top: 1px solid #EEE !important; }
+
+.bar-footer textarea {
+  resize: none;
+  height: 21px;
+  max-height: 100px; }
+
+.bar-footer .item-input {
+  border: none !important;
+  border-bottom: 1px solid #EEE !important; }
+
+.rj-footer-btn {
+  position: absolute !important;
+  bottom: -1px;
+  right: 5px; }
+
+.rj-footer-input {
+  width: 100%; }
+
+.rj-footer-btn-wrap {
+  position: relative;
+  height: 100%;
+  width: 50px;
+  top: 2px; }
+
+.rj-footer-btn-left {
+  position: absolute !important;
+  bottom: 0; }
+
+.rj-message-wrap {
+  padding: 7px;
+  overflow: auto;
+  position: relative; }
+
+.rj-message-wrap .rj-head-pic,
+.rj-message-wrap .rj-head-pic-right {
+  max-height: 40px;
+  max-width: 40px; }
+
+.rj-message-wrap .rj-head-pic {
+  float: left; }
+
+.rj-message-wrap .rj-head-pic-right {
+  float: right; }
+
+.rj-message-wrap .rj-message,
+.rj-message-wrap .rj-message-right {
+  padding: 6px 8px;
+  line-height: 26px;
+  max-width: 190px;
+  border-radius: 5px; }
+
+.rj-message-wrap .rj-message {
+  float: left;
+  margin-left: 16px;
+  background-color: #fff; }
+
+.rj-message-wrap .rj-message-right {
+  float: right;
+  margin-right: 16px;
+  background-color: #6BE00B; }
+
+.rj-message-wrap .rj-triangle-left,
+.rj-message-wrap .rj-triangle-right {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-width: 8px 10px;
+  border-style: solid;
+  top: 17px; }
+
+.rj-message-wrap .rj-triangle-left {
+  left: 47px;
+  border-color: transparent #FFF transparent transparent; }
+
+.rj-message-wrap .rj-triangle-right {
+  right: 47px;
+  border-color: transparent transparent transparent #6BE00B; }
+
+.rj-message-time {
+  width: 42px;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.rj-footer-btn-wrap .rj-send-button {
+  background-color: #1BBB37;
+  color: #FFF;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  position: absolute;
+  bottom: 3px;
+  width: 38px;
+  left: 4px; }
+
+.rj-list .list {
+  width: 90%;
+  margin-left: 10px;
+  margin-right: auto;
+  margin-top: -1px; }
+
+.rj-list .list .rj-item {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  padding-left: 0;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
+.rj-contacts-item {
+  padding: 0px !important; }
+
+.rj-item .rj-contacts-pic {
+  color: white;
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  float: left;
+  font-size: 28px;
+  text-align: center; }
+
+.rj-orange-bgc {
+  background-color: orange; }
+
+.rj-green-bgc {
+  background-color: #63db2a; }
+
+.rj-blue-bgc {
+  background-color: #2d31ca; }
+
+.rj-item h2 {
+  padding-left: 10px;
+  position: absolute;
+  margin: auto !important;
+  top: 0;
+  bottom: 0;
+  left: 36px;
+  height: 32px;
+  line-height: 32px; }
+
+.rj-contacts-pic img {
+  width: 36px;
+  height: 36px; }
+
+.rj-contacts-index-bar {
+  background-color: #ccc;
+  padding-left: 10px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 80%;
+  color: #545454; }
+
+.rj-contacts-right-bar {
+  position: fixed;
+  right: 0;
+  width: 20px;
+  height: 464px;
+  z-index: 2;
+  text-align: center;
+  font-size: 80%;
+  color: #545454; }
+
+.rj-contacts-right-bar div {
+  height: 16px; }
+
+.rj-contacts-middle-bar {
+  position: fixed;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  color: #FFF;
+  font-size: 300%;
+  background-color: rgba(0, 0, 0, 0.5); }
+
 /*!
   Ionicons, v2.0.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
@@ -4361,9 +4585,9 @@ a.subdued {
   justify-content: center;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  border-color: #b2b2b2;
+  border-color: #ccc;
   background-color: #f8f8f8;
-  background-image: linear-gradient(0deg, #b2b2b2, #b2b2b2 50%, transparent 50%);
+  background-image: linear-gradient(0deg, #ccc, #ccc 50%, transparent 50%);
   color: #444;
   position: absolute;
   bottom: 0;
@@ -5467,7 +5691,7 @@ ion-tabs.tabs-color-active-dark .tab-item {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both; }
   .popup-container .popup {
-    width: 250px;
+    width: 85%;
     max-width: 100%;
     max-height: 90%;
     border-radius: 0px;
@@ -5598,14 +5822,14 @@ ion-tabs.tabs-color-active-dark .tab-item {
  * --------------------------------------------------
  */
 .item {
-  border-color: #ddd;
+  border-color: #ccc;
   background-color: #fff;
   color: #444;
   position: relative;
   z-index: 2;
   display: block;
   margin: -1px;
-  padding: 16px;
+  padding: 10px;
   border-width: 1px;
   border-style: solid;
   font-size: 16px; }
@@ -5642,12 +5866,12 @@ ion-tabs.tabs-color-active-dark .tab-item {
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    top: 16px;
-    right: 32px; }
+    top: 10px;
+    right: 20px; }
   .item.item-button-right .badge {
-    right: 67px; }
+    right: 55px; }
   .item.item-divider .badge {
-    top: 8px; }
+    top: 5px; }
   .item .badge + .badge {
     margin-right: 5px; }
   .item.item-light {
@@ -5898,7 +6122,7 @@ button.item.item-complex {
 .item-radio .item-content {
   position: relative;
   z-index: 2;
-  padding: 16px 49px 16px 16px;
+  padding: 10px 29px 10px 10px;
   border: none;
   background-color: #fff; }
 
@@ -6063,24 +6287,24 @@ a.item-content {
   font-size: 28px; }
 
 .item-icon-left {
-  padding-left: 54px; }
+  padding-left: 34px; }
   .item-icon-left .icon {
-    left: 11px; }
+    left: 7px; }
 
 .item-complex.item-icon-left {
   padding-left: 0; }
   .item-complex.item-icon-left .item-content {
-    padding-left: 54px; }
+    padding-left: 34px; }
 
 .item-icon-right {
-  padding-right: 54px; }
+  padding-right: 34px; }
   .item-icon-right .icon {
-    right: 11px; }
+    right: 7px; }
 
 .item-complex.item-icon-right {
   padding-right: 0; }
   .item-complex.item-icon-right .item-content {
-    padding-right: 54px; }
+    padding-right: 34px; }
 
 .item-icon-left.item-icon-right .icon:first-child {
   right: auto; }
@@ -6095,10 +6319,10 @@ a.item-content {
   font-size: 16px; }
 
 .item-icon-left .icon-accessory {
-  left: 3px; }
+  left: 2px; }
 
 .item-icon-right .icon-accessory {
-  right: 3px; }
+  right: 2px; }
 
 /**
  * Item Button
@@ -6106,7 +6330,7 @@ a.item-content {
  * An item button is a child button inside an .item (not the entire .item)
  */
 .item-button-left {
-  padding-left: 72px; }
+  padding-left: 45px; }
 
 .item-button-left > .button,
 .item-button-left .item-content > .button {
@@ -6122,8 +6346,8 @@ a.item-content {
   -moz-align-items: center;
   align-items: center;
   position: absolute;
-  top: 8px;
-  left: 11px;
+  top: 5px;
+  left: 7px;
   min-width: 34px;
   min-height: 34px;
   font-size: 18px;
@@ -6144,7 +6368,7 @@ a.item-content {
 .item-button-right,
 a.item.item-button-right,
 button.item.item-button-right {
-  padding-right: 80px; }
+  padding-right: 50px; }
 
 .item-button-right > .button,
 .item-button-right .item-content > .button,
@@ -6162,8 +6386,8 @@ button.item.item-button-right {
   -moz-align-items: center;
   align-items: center;
   position: absolute;
-  top: 8px;
-  right: 16px;
+  top: 5px;
+  right: 10px;
   min-width: 34px;
   min-height: 34px;
   font-size: 18px;
@@ -6190,8 +6414,8 @@ button.item.item-button-right {
 .item-avatar .item-content,
 .item-avatar-left,
 .item-avatar-left .item-content {
-  padding-left: 72px;
-  min-height: 72px; }
+  padding-left: 60px;
+  min-height: 60px; }
   .item-avatar > img:first-child,
   .item-avatar .item-image,
   .item-avatar .item-content > img:first-child,
@@ -6201,35 +6425,35 @@ button.item.item-button-right {
   .item-avatar-left .item-content > img:first-child,
   .item-avatar-left .item-content .item-image {
     position: absolute;
-    top: 16px;
-    left: 16px;
+    top: 10px;
+    left: 10px;
     max-width: 40px;
     max-height: 40px;
     width: 100%;
     height: 100%;
-    border-radius: 0; }
+    border-radius: 50%; }
 
 .item-avatar-right,
 .item-avatar-right .item-content {
-  padding-right: 72px;
-  min-height: 72px; }
+  padding-right: 60px;
+  min-height: 60px; }
   .item-avatar-right > img:first-child,
   .item-avatar-right .item-image,
   .item-avatar-right .item-content > img:first-child,
   .item-avatar-right .item-content .item-image {
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 10px;
+    right: 10px;
     max-width: 40px;
     max-height: 40px;
     width: 100%;
     height: 100%;
-    border-radius: 0; }
+    border-radius: 50%; }
 
 .item-thumbnail-left,
 .item-thumbnail-left .item-content {
-  padding-top: 8px;
-  padding-left: 106px;
+  padding-top: 5px;
+  padding-left: 100px;
   min-height: 100px; }
   .item-thumbnail-left > img:first-child,
   .item-thumbnail-left .item-image,
@@ -6251,8 +6475,8 @@ button.item.item-button-right {
 
 .item-thumbnail-right,
 .item-thumbnail-right .item-content {
-  padding-top: 8px;
-  padding-right: 106px;
+  padding-top: 5px;
+  padding-right: 100px;
   min-height: 100px; }
   .item-thumbnail-right > img:first-child,
   .item-thumbnail-right .item-image,
@@ -6280,16 +6504,16 @@ button.item.item-button-right {
 
 .item-body {
   overflow: auto;
-  padding: 16px;
+  padding: 10px;
   text-overflow: inherit;
   white-space: normal; }
   .item-body h1, .item-body h2, .item-body h3, .item-body h4, .item-body h5, .item-body h6, .item-body p {
-    margin-top: 16px;
-    margin-bottom: 16px; }
+    margin-top: 10px;
+    margin-bottom: 10px; }
 
 .item-divider {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   min-height: 30px;
   background-color: #f5f5f5;
   color: #222;
@@ -7386,7 +7610,7 @@ legend {
   margin-bottom: 1.42857;
   padding: 0;
   width: 100%;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   color: #444;
   font-size: 21px;
   line-height: 2.85714; }
@@ -7483,7 +7707,7 @@ textarea {
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding: 10.66667px; }
+  padding: 6.66667px; }
 
 .item-input-wrapper {
   display: -webkit-box;
@@ -7516,7 +7740,7 @@ textarea {
   line-height: 18px; }
 
 .item-input-wrapper ~ .button {
-  margin-left: 10.66667px; }
+  margin-left: 6.66667px; }
 
 .input-label {
   display: table;
@@ -7865,21 +8089,21 @@ input:checked + .checkbox-icon:after {
   opacity: 1; }
 
 .item-checkbox {
-  padding-left: 60px; }
+  padding-left: 48px; }
   .item-checkbox.active {
     box-shadow: none; }
 
 .item-checkbox .checkbox {
   position: absolute;
   top: 50%;
-  right: 8px;
-  left: 8px;
+  right: 5px;
+  left: 5px;
   z-index: 3;
   margin-top: -21px; }
 
 .item-checkbox.item-checkbox-right {
-  padding-right: 60px;
-  padding-left: 16px; }
+  padding-right: 48px;
+  padding-left: 10px; }
 
 .item-checkbox-right .checkbox input,
 .item-checkbox-right .checkbox-icon {
@@ -7992,15 +8216,15 @@ input:checked + .checkbox-icon:after {
 
 .item-toggle,
 .item-toggle.item-complex .item-content {
-  padding-right: 99px; }
+  padding-right: 81px; }
 
 .item-toggle.item-complex {
   padding-right: 0; }
 
 .item-toggle .toggle {
   position: absolute;
-  top: 10px;
-  right: 16px;
+  top: 7px;
+  right: 10px;
   z-index: 3; }
 
 .toggle input:disabled + .track {
@@ -8073,7 +8297,7 @@ input:checked + .checkbox-icon:after {
 
 .item-radio .item-content {
   /* give some room to the right for the checkmark icon */
-  padding-right: 64px; }
+  padding-right: 40px; }
 
 .item-radio .radio-icon {
   /* checkmark icon will be hidden by default */
@@ -8082,7 +8306,7 @@ input:checked + .checkbox-icon:after {
   right: 0;
   z-index: 3;
   visibility: hidden;
-  padding: 14px;
+  padding: 8px;
   height: 100%;
   font-size: 24px; }
 
@@ -8281,7 +8505,7 @@ input:checked + .checkbox-icon:after {
     top: 0;
     bottom: 0;
     right: 0;
-    padding: 0 48px 0 16px;
+    padding: 0 30px 0 10px;
     max-width: 65%;
     border: none;
     background: #fff;
@@ -8299,7 +8523,7 @@ input:checked + .checkbox-icon:after {
   .item-select:after {
     position: absolute;
     top: 50%;
-    right: 16px;
+    right: 10px;
     margin-top: -3px;
     width: 0;
     height: 0;

@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic', 'starter.routes', 'starter.directives', 'starter.controllers', 'starter.services', 'monospaced.elastic'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.routes', 'starter.services', 'starter.directives', 'monospaced.elastic'])
 
 .config(function($ionicConfigProvider) {
 
@@ -29,7 +29,7 @@ angular.module('starter', ['ionic', 'starter.routes', 'starter.directives', 'sta
 
     });
     $http.get(url + "data/json/friends.json").then(function(response){
-        console.log(response.data.results);
+        //console.log(response.data.results);
     });
     // }
 

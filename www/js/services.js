@@ -1,21 +1,21 @@
 angular.module('starter.services', [])
 
-.factory("userService", function($http) {
-    var users = [];
-    return {
-        getUsers: function() {
-            return $http.get("https://randomuser.me/api/?results=10").then(function(response) {
-                users = response.data.results;
-                return response.data.results;
-            });
-        },
-        getUser: function(index) {
-            return users[index];
-        }
-    };
-})
+    .factory("userService", function($http) {
+        var users = [];
+        return {
+            getUsers: function() {
+                return $http.get("https://randomuser.me/api/?results=10").then(function(response) {
+                    users = response.data.results;
+                    return response.data.results;
+                });
+            },
+            getUser: function(index) {
+                return users[index];
+            }
+        };
+    })
 
-.factory('localStorageService', [function() {
+    .factory('localStorageService', [function() {
         return {
             get: function localStorageServiceGet(key, defaultValue) {
                 var stored = localStorage.getItem(key);
@@ -39,6 +39,7 @@ angular.module('starter.services', [])
             }
         };
     }])
+
     .factory('dateService', [function() {
         return {
             handleMessageDate: function(messages) {
@@ -129,6 +130,7 @@ angular.module('starter.services', [])
             }
         };
     }])
+
     .factory('messageService', ['localStorageService', 'dateService',
         function(localStorageService, dateService) {
             return {

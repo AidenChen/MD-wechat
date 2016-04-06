@@ -8,18 +8,18 @@ angular.module('starter.controllers', [])
 
 .controller('messageCtrl', function($scope, $state, $ionicPopup, localStorageService, messageService) {
     
-    // $scope.messages = messageService.getAllMessages();
-    // console.log($scope.messages);
+    //$scope.messages = messageService.getAllMessages();
     $scope.onSwipeLeft = function() {
         $state.go("tabs.contact");
     };
-    $scope.popupMessageOpthins = function(message) {
-        $scope.popup.index = $scope.messages.indexOf(message);
+    $scope.popupMessageOpthins = function(index) {
+        $scope.popup.index = index;
         $scope.popup.optionsPopup = $ionicPopup.show({
             templateUrl: "templates/popup.html",
             scope: $scope,
         });
         $scope.popup.isPopup = true;
+        console.log($scope.popup.index);
     };
     $scope.markMessage = function() {
         var index = $scope.popup.index;
@@ -84,9 +84,13 @@ angular.module('starter.controllers', [])
     };
 })
 
-.controller('conversationDetailCtrl', ['$scope', '$stateParams',
+.controller('conversationDetailCtrl', ['$scope', '$state', '$stateParams',
     'messageService', '$ionicScrollDelegate', '$timeout',
-    function($scope, $stateParams, messageService, $ionicScrollDelegate, $timeout) {
+    function($scope, $state, $stateParams, messageService, $ionicScrollDelegate, $timeout) {
+        $scope.onSwipeRight = function() {
+            $state.go("tabs.home");
+        };
+
         var viewScroll = $ionicScrollDelegate.$getByHandle('messageDetailsScroll');
         // console.log("enter");
         $scope.doRefresh = function() {
