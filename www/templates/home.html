@@ -2,7 +2,7 @@
     <ion-content on-swipe-left="onSwipeLeft()">
         <!--这里的rj-close-back-drop是自定义指令, 后面会讲是干嘛的-->
         <ion-list rj-close-back-drop>
-            <ion-item class="item-avatar" on-hold="popupMessageOpthins($index)" rj-hold-active ng-repeat="message in messages | orderBy:['isTop', 'lastMessage.timeFrome1970']:true" ng-click="messageDetils(message)">
+            <ion-item class="item-avatar" on-hold="popupMessageOpthins(message)" rj-hold-active ng-repeat="message in messages | orderBy:['isTop', 'lastMessage.timeFrome1970']:true" ng-click="messageDetils(message)">
                 <img ng-src="{{message.pic}}">
                 <!--这个就是来了新消息, 头像上的小红数字-->
                 <span class="rj-sm-red-icon" ng-show="message.showHints"><p ng-bind="message.noReadMessages"></p></span>

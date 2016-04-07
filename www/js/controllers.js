@@ -7,19 +7,17 @@ angular.module('starter.controllers', [])
 })
 
 .controller('messageCtrl', function($scope, $state, $ionicPopup, localStorageService, messageService) {
-    
-    //$scope.messages = messageService.getAllMessages();
+
     $scope.onSwipeLeft = function() {
         $state.go("tabs.contact");
     };
-    $scope.popupMessageOpthins = function(index) {
-        $scope.popup.index = index;
+    $scope.popupMessageOpthins = function(message) {
+        $scope.popup.index = $scope.messages.indexOf(message);
         $scope.popup.optionsPopup = $ionicPopup.show({
             templateUrl: "templates/popup.html",
             scope: $scope,
         });
         $scope.popup.isPopup = true;
-        console.log($scope.popup.index);
     };
     $scope.markMessage = function() {
         var index = $scope.popup.index;
@@ -62,7 +60,6 @@ angular.module('starter.controllers', [])
         });
     };
     $scope.$on("$ionicView.beforeEnter", function(){
-        // console.log($scope.messages);
         $scope.messages = messageService.getAllMessages();
         $scope.popup = {
             isPopup: false,
