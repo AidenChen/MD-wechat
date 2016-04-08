@@ -61,6 +61,7 @@ angular.module('starter.controllers', [])
     };
     $scope.$on("$ionicView.beforeEnter", function(){
         $scope.messages = messageService.getAllMessages();
+        console.log($scope.messages);
         $scope.popup = {
             isPopup: false,
             index: 0
@@ -69,7 +70,7 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('contactCtrl', function($scope, $state) {
+.controller('contactCtrl', function($scope, $state, userService) {
     $scope.onSwipeLeft = function() {
         $state.go("tabs.found");
     };
@@ -79,6 +80,10 @@ angular.module('starter.controllers', [])
     $scope.contacts_right_bar_swipe = function(e){
         console.log(e);
     };
+    $scope.$on("$ionicView.beforeEnter", function(){
+        $scope.users = userService.getUsers();
+        console.log($scope.users);
+    });
 })
 
 .controller('conversationDetailCtrl', ['$scope', '$state', '$stateParams',

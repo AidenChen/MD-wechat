@@ -1,5 +1,5 @@
 angular.module('starter.directives', [])
-    .directive('rjHoldActive', ['$ionicGesture', '$timeout', '$ionicBackdrop',
+    .directive('popupOpenAni', ['$ionicGesture', '$timeout', '$ionicBackdrop',
         function($ionicGesture, $timeout, $ionicBackdrop) {
             return {
                 scope: false,
@@ -10,13 +10,13 @@ angular.module('starter.directives', [])
                         iElm.addClass('active');
                         $timeout(function() {
                             iElm.removeClass('active');
-                        }, 300);
+                        }, 3000);
                     }, iElm);
                 }
             };
         }
     ])
-    .directive('rjCloseBackDrop', [function() {
+    .directive('popupClose', [function() {
         return {
             scope: false,
             restrict: 'A',
@@ -55,16 +55,16 @@ angular.module('starter.directives', [])
             }
         };
     }])
-    .directive('rjPositionMiddle', ['$window', function($window){
-        return{
-            replace: false,
-            link: function(scope, iElm, iAttrs, controller){
-                var height = $window.innerHeight - 44 - 49 - iElm[0].offsetHeight;
-                if (height >= 0) {
-                    iElm[0].style.top = (height / 2 + 44) + 'px';
-                }else{
-                    iElm[0].style.top = 44 + 'px';
-                }
-            }
-        }
-    }])
+    //.directive('rjPositionMiddle', ['$window', function($window){
+    //    return{
+    //        replace: false,
+    //        link: function(scope, iElm, iAttrs, controller){
+    //            var height = $window.innerHeight - 44 - 49 - iElm[0].offsetHeight;
+    //            if (height >= 0) {
+    //                iElm[0].style.top = (height / 2 + 44) + 'px';
+    //            }else{
+    //                iElm[0].style.top = 44 + 'px';
+    //            }
+    //        }
+    //    }
+    //}])

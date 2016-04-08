@@ -1,7 +1,10 @@
 <ion-view view-title="微信">
     <ion-content class="padding" on-swipe-left="onSwipeLeft()" on-swipe-right="onSwipeRight()">
-        <p>
-            Contact List
-        </p>
+        <ion-list>
+            <ion-item class="item-avatar" ng-repeat="user in users">
+                <img ng-src="{{user.picture.thumbnail}}">
+                <h2 ng-bind="user.value.ceil"></h2>
+            </ion-item>
+        </ion-list>
     </ion-content>
 </ion-view>
