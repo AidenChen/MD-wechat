@@ -5,6 +5,7 @@ angular.module('starter.services', [])
         return {
             getUsers: function() {
                 return $http.get("https://randomuser.me/api/?results=10").then(function(response) {
+                //return $http.get("data/json/friends.json").success(function(response) {
                     users = response.data.results;
                     return response.data.results;
                 });

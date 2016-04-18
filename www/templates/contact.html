@@ -1,9 +1,9 @@
 <ion-view view-title="微信">
-    <ion-content class="padding" on-swipe-left="onSwipeLeft()" on-swipe-right="onSwipeRight()">
+    <ion-content on-swipe-left="onSwipeLeft()" on-swipe-right="onSwipeRight()">
         <ion-list>
-            <ion-item class="item-avatar" ng-repeat="user in users">
+            <ion-item class="item-avatar" ng-repeat="user in users | orderBy:['name.first']:false">
                 <img ng-src="{{user.picture.thumbnail}}">
-                <h2 ng-bind="user.value.ceil"></h2>
+                <h2 ng-bind="user.name.first"></h2>
             </ion-item>
         </ion-list>
     </ion-content>
