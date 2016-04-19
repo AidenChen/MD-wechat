@@ -20,7 +20,8 @@
                 "large": "https://randomuser.me/api/portraits/women/9.jpg",
                 "medium": "https://randomuser.me/api/portraits/med/women/9.jpg",
                 "thumbnail": "https://randomuser.me/api/portraits/thumb/women/9.jpg"
-            }
+            },
+            "isShow":0
         },
         {
             "gender": "male",
@@ -42,7 +43,8 @@
                 "large": "https://randomuser.me/api/portraits/men/48.jpg",
                 "medium": "https://randomuser.me/api/portraits/med/men/48.jpg",
                 "thumbnail": "https://randomuser.me/api/portraits/thumb/men/48.jpg"
-            }
+            },
+            "isShow":1
         },
         {
             "gender": "male",
@@ -64,7 +66,8 @@
                 "large": "https://randomuser.me/api/portraits/men/73.jpg",
                 "medium": "https://randomuser.me/api/portraits/med/men/73.jpg",
                 "thumbnail": "https://randomuser.me/api/portraits/thumb/men/73.jpg"
-            }
+            },
+            "isShow":1
         },
         {
             "gender": "male",
@@ -86,7 +89,8 @@
                 "large": "https://randomuser.me/api/portraits/men/11.jpg",
                 "medium": "https://randomuser.me/api/portraits/med/men/11.jpg",
                 "thumbnail": "https://randomuser.me/api/portraits/thumb/men/11.jpg"
-            }
+            },
+            "isShow":0
         },
         {
             "gender": "male",
@@ -108,7 +112,8 @@
                 "large": "https://randomuser.me/api/portraits/men/47.jpg",
                 "medium": "https://randomuser.me/api/portraits/med/men/47.jpg",
                 "thumbnail": "https://randomuser.me/api/portraits/thumb/men/47.jpg"
-            }
+            },
+            "isShow":1
         },
         {
             "gender": "male",
@@ -130,7 +135,8 @@
                 "large": "https://randomuser.me/api/portraits/men/71.jpg",
                 "medium": "https://randomuser.me/api/portraits/med/men/71.jpg",
                 "thumbnail": "https://randomuser.me/api/portraits/thumb/men/71.jpg"
-            }
+            },
+            "isShow":1
         },
         {
             "gender": "female",
@@ -152,7 +158,8 @@
                 "large": "https://randomuser.me/api/portraits/women/83.jpg",
                 "medium": "https://randomuser.me/api/portraits/med/women/83.jpg",
                 "thumbnail": "https://randomuser.me/api/portraits/thumb/women/83.jpg"
-            }
+            },
+            "isShow":0
         },
         {
             "gender": "female",
@@ -174,7 +181,8 @@
                 "large": "https://randomuser.me/api/portraits/women/60.jpg",
                 "medium": "https://randomuser.me/api/portraits/med/women/60.jpg",
                 "thumbnail": "https://randomuser.me/api/portraits/thumb/women/60.jpg"
-            }
+            },
+            "isShow":1
         },
         {
             "gender": "male",
@@ -196,7 +204,8 @@
                 "large": "https://randomuser.me/api/portraits/men/7.jpg",
                 "medium": "https://randomuser.me/api/portraits/med/men/7.jpg",
                 "thumbnail": "https://randomuser.me/api/portraits/thumb/men/7.jpg"
-            }
+            },
+            "isShow":1
         },
         {
             "gender": "male",
@@ -218,7 +227,8 @@
                 "large": "https://randomuser.me/api/portraits/men/47.jpg",
                 "medium": "https://randomuser.me/api/portraits/med/men/47.jpg",
                 "thumbnail": "https://randomuser.me/api/portraits/thumb/men/47.jpg"
-            }
+            },
+            "isShow":1
         },
         {
             "gender": "female",
@@ -240,7 +250,8 @@
                 "large": "https://randomuser.me/api/portraits/women/29.jpg",
                 "medium": "https://randomuser.me/api/portraits/med/women/29.jpg",
                 "thumbnail": "https://randomuser.me/api/portraits/thumb/women/29.jpg"
-            }
+            },
+            "isShow":0
         }
     ]
 }

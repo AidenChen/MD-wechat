@@ -15,8 +15,8 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
-//$item-avatar-border-radius: 0;
-$item-default-border: #ccc;
+$item-avatar-border-radius: 0;
+$item-default-border: #eee;
 $tabs-default-border: $item-default-border;
 $item-padding: 10px;
 
@@ -71,24 +71,6 @@ $item-padding: 10px;
 $popup-width: 85%;
 .scroll-bar-indicator {
   display: none;
-}
-
-.item > .rj-sm-red-icon {
-  position: absolute;
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background-color: #FF0000;
-  line-height: 18px;
-  text-align: center;
-  top: 5px;
-  left: 40px;
-}
-
-.item > .rj-sm-red-icon > p {
-  color: #FFF;
-  font-size: 12px;
 }
 
 .rj-item-top {
@@ -243,12 +225,13 @@ $popup-width: 85%;
 
 .rj-item .rj-contacts-pic{
   color:white;
-  height:36px;
-  width:36px;
-  line-height: 36px;
+  height:40px;
+  width:40px;
+  line-height: 40px;
   float: left;
   font-size: 28px;
   text-align: center;
+  margin-left:1px;
 }
 .rj-orange-bgc{
   background-color:orange;
@@ -257,23 +240,24 @@ $popup-width: 85%;
   background-color: #63db2a;
 }
 .rj-blue-bgc{
-  background-color: #2d31ca;
+  background-color: #387EF5;
 }
 
 .rj-item h2{
-  padding-left: 10px;
+  padding-left: 22px;
+  font-size:14px !important;
   position: absolute;
   margin: auto !important;
   top: 0;
   bottom: 0;
-  left: 36px;
+  left: 40px;
   height: 32px;
   line-height: 32px;
 }
 
 .rj-contacts-pic img{
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
 }
 
 .rj-contacts-index-bar{
@@ -313,6 +297,27 @@ $popup-width: 85%;
   color: #FFF;
   font-size: 300%;
   background-color: rgba(0, 0, 0, .5);
+}
+
+//contact page
+.ctPage {
+  h4 {
+    color:#999;
+    height:20px;
+    margin-top:0px;
+    margin-bottom:0px;
+    background:#eee;
+    font-size:14px;
+    line-height:20px;
+    font-weight:normal;
+    text-indent:10px;
+  }
+  h2 {
+    padding-top:0;
+    height:40px;
+    line-height:35px;
+    padding-left:10px;
+  }
 }
 
 // The path for our ionicons font files, relative to the built CSS in www/css

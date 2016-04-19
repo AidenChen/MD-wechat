@@ -85,6 +85,7 @@ angular.module('starter.controllers', [])
         $http.get("data/json/friends.json").then(function(response) {
             //console.log(response.data.results);
             $scope.users = response.data.results;
+            //console.log($scope.users.name.first)
         });
     });
 })

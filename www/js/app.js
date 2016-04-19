@@ -49,3 +49,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.routes', 'st
         }
     });
 })
+
+.filter('getOddItem',function(){
+    return function(inputArray){
+        var array = [];
+        array.push(inputArray[0]);
+        for(var i=1;i<inputArray.length;i++){
+            if(inputArray[i].name.first.substr(0,1) !== inputArray[i-1].name.first.substr(0,1)){
+                array.push(inputArray[i]);
+            }
+        }
+        return array;
+    }
+})
